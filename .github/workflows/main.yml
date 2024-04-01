@@ -1,0 +1,14 @@
+name: Build Job for DockerHub
+  on:
+    push:
+      branches:
+        - main
+        
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code from GitHub
+        uses: actions/checkout@v2 
+          
+    
